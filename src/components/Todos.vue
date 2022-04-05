@@ -9,18 +9,7 @@
     days: number;
   };
 
-  const todos: Ref<Todo[]> = ref([
-    {
-      id: 0,
-      content: 'project1',
-      days: 10,
-    },
-    {
-      id: 1,
-      content: 'project2',
-      days: 20,
-    },
-  ]);
+  const todos: Ref<Todo[]> = ref([]);
 
   const registerTodo = (partialTodo: { content: string; days: number }) => {
     const todo: Todo = {
